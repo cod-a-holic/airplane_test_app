@@ -1,0 +1,15 @@
+App\Model\Hangar:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      type: integer
+      groups: [airplane_view, airplane_detail]
+    name:
+      expose: true
+      type: string
+      groups: [airplane_view, airplane_detail]
+    airplanes:
+      expose: true
+      type: array
+      groups: [airplane_view, airplane_detail]

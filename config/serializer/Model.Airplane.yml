@@ -1,0 +1,11 @@
+App\Model\Airplane:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      type: integer
+      groups: [airplane_view, airplane_detail]
+    name:
+      expose: true
+      type: string
+      groups: [airplane_view, airplane_detail]
