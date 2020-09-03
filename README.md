@@ -7,9 +7,10 @@ docker-compose -f docker-compose.yaml build
 docker-compose -f docker-compose.yaml up -d
 ```
 
-After docker started, to create and fill database
+After docker started, to install dependencies, create and fill database
 ```shell script
 docker exec -it docker_php-fpm_1 bash
+composer install
 ./bin/console d:d:c
 ./bin/console d:mi:mi
 ```
